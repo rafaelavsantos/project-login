@@ -39,6 +39,9 @@ main {
   width: 300px;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+  transition: width .6s, height .6s;
+  transition-timing-function: ease;
 }
 
 #login > #img {
