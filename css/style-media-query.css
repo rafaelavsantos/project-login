@@ -7,6 +7,18 @@
 
   #login {
     width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #login h1 {
+    font-size: 2em;
+  }
+
+  #login p {
+    font-size: 1em;
+    margin: 20px;
   }
 
   #login > #img {
@@ -28,6 +40,18 @@
 
   #login {
     width: 990px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #login h1 {
+    font-size: 2em;
+  }
+
+  #login p {
+    font-size: 1em;
+    margin: 20px;
   }
 
   #login > #img {

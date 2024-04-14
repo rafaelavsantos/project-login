@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-media-query.css">
   <title>Login</title>
@@ -17,18 +18,32 @@
       </div>
       <div id="form">
         <h1>Login</h1>
-        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
+          ambiente.</p>
 
-        <form action="login.php" method="post">
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username">
+        <form action="login.php" method="post" autocomplete="on">
+          <div class="campo">
+            <span class="material-symbols-outlined">
+              account_circle
+              </span>
+            <input type="text" name="username" id="username" placeholder="Username" autocomplete="email" required maxlength="30">
+          </div>
 
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
+          <div class="campo">
+            <span class="material-symbols-outlined">
+              lock
+              </span>
+            <input type="password" name="password" id="password" placeholder="*********" autocomplete="current-password" required minlength="8" maxlength="20">
+          </div>
 
           <input type="submit" value="Sign In">
 
-          <button>Forget Password?</button>
+          <a href="#" class="btn">
+            Forget Password? 
+            <span class="material-symbols-outlined">
+            mail
+            </span>
+          </a>
         </form>
       </div>
     </section>
